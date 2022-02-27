@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
 :root {
   --blue-main-bg: hsl(217, 54%, 11%);
   --blue-card-bg: hsl(216, 50%, 16%);
@@ -17,6 +19,7 @@
 }
 
 body {
+  font-family: "Outfit", sans-serif;
   background-color: var(--blue-main-bg);
   height: 100vh;
   display: flex;
@@ -26,13 +29,14 @@ body {
 
 .card {
   height: 80%;
-  width: 90%;
+  width: max(30vw, 22.5rem);
   background-color: var(--blue-card-bg);
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10, 1fr);
   gap: 0.75rem;
+  box-shadow: 0.1rem 0.1rem 10rem 5rem var(--blue-line);
 }
 
 .card_img {
@@ -43,7 +47,7 @@ body {
   border-radius: 3%;
   backface-visibility: hidden;
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 450ms ease-in-out;
 }
 .wrapper {
   background-color: var(--Cyan);
@@ -59,6 +63,7 @@ body {
 .wrapper:hover .view {
   opacity: 1;
 }
+
 .view {
   text-align: center;
   position: absolute;
@@ -66,12 +71,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
 .card h1 {
   color: var(--White);
   cursor: pointer;
+  font-size: max(2vw, 1.25rem);
 }
 .card h1:hover {
   color: var(--Cyan);
@@ -140,7 +146,7 @@ body {
   color: var(--Cyan);
 }
 
-@media screen and (min-width: 340px) {
+/* @media screen and (min-width: 340px) {
   .card {
     width: 85%;
   }
@@ -174,4 +180,4 @@ body {
   .card {
     width: 29%;
   }
-}
+} */
