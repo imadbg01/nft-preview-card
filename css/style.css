@@ -27,9 +27,9 @@ body {
   align-items: center;
 }
 
-.card {
+main {
   height: 80%;
-  width: max(30vw, 22.5rem);
+  width: max(25vw, 22.5rem);
   background-color: var(--blue-card-bg);
   padding: 1rem;
   display: grid;
@@ -37,6 +37,7 @@ body {
   grid-template-rows: repeat(10, 1fr);
   gap: 0.75rem;
   box-shadow: 0.1rem 0.1rem 10rem 5rem var(--blue-line);
+  border-radius: 3%;
 }
 
 .card_img {
@@ -58,7 +59,7 @@ body {
 }
 
 .wrapper:hover .card_img {
-  opacity: 0.5;
+  opacity: 0.66;
 }
 .wrapper:hover .view {
   opacity: 1;
@@ -74,12 +75,12 @@ body {
   transition: opacity 250ms ease-in-out;
 }
 
-.card h1 {
+main h1 {
   color: var(--White);
   cursor: pointer;
   font-size: max(2vw, 1.25rem);
 }
-.card h1:hover {
+main h1:hover {
   color: var(--Cyan);
 }
 
@@ -145,39 +146,3 @@ body {
 .author a:hover {
   color: var(--Cyan);
 }
-
-/* @media screen and (min-width: 340px) {
-  .card {
-    width: 85%;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .card {
-    width: 61%;
-  }
-}
-
-@media screen and (min-width: 740px) {
-  .card {
-    width: 52%;
-  }
-}
-
-@media screen and (min-width: 860px) {
-  .card {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 940px) {
-  .card {
-    width: 33%;
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .card {
-    width: 29%;
-  }
-} */
