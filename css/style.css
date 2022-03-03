@@ -37,7 +37,7 @@ main {
   grid-template-rows: repeat(10, 1fr);
   gap: 0.75rem;
   box-shadow: 0.1rem 0.1rem 10rem 5rem var(--blue-line);
-  border-radius: 3%;
+  border-radius: 1rem;
 }
 
 .card_img {
